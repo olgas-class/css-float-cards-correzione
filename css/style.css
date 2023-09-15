@@ -9,4 +9,52 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /* Debug */
+    /* border: 1px solid black; */
+}
+
+body {
+    font-family: "Fredoka", sans-serif;
+}
+
+/* COMMON */
+.section {
+    padding: 2rem 0;
+    /* Debug */
+    border: 1px solid green;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.section-title {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: .5em; /* praticamente 1 rem in questo caso */
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+/* Utilities classes */
+.text-center {
+    text-align: center;
+}
+
+/* Grid classes */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col {
+    float: left;
+    width: calc(100% / 3);
+    /* Debug */
+    border: 1px solid blue;
+    min-height: 80px;
 }
