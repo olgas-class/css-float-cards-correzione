@@ -1,7 +1,7 @@
 :root {
     --primary-color: #e53170;
     --bg-color: #0f0e17;
-    --link-color: #0054bd;
+    --link-color: #5092e3;
 }
 
 /* RESET */
@@ -15,6 +15,10 @@
 
 body {
     font-family: "Fredoka", sans-serif;
+}
+
+a {
+    color: inherit;
 }
 
 /* COMMON */
@@ -53,8 +57,36 @@ p {
 
 .col {
     float: left;
-    width: calc(100% / 3);
+    width: calc(100% / 3 - 20px);
+    margin: 10px;
+    /* padding: 1rem; */
     /* Debug */
     border: 1px solid blue;
-    min-height: 80px;
+}
+
+/* Card of team memeber */
+
+.card {
+    background-color: var(--bg-color);
+    color: white;
+}
+
+.card-image {
+    float: left;
+    width: 100px;
+}
+
+.card-content {
+    float: right;
+    width: calc(100% - 100px);
+    padding: 5px 10px;
+    /* padding-left: 110px; */
+} 
+
+.name {
+    margin-bottom: .4rem;
+}
+
+.card-content a {
+    color: var(--link-color);
 }
