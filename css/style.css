@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #e53170;
+    --bg-color: #0f0e17;
+    --link-color: #0054bd;
+}
+
 /* RESET */
 * {
     padding: 0;
